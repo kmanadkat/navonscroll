@@ -22,10 +22,10 @@ function hide_on_scroll(obj) {
   var navClasses = document.createElement('style');
   navClasses.type = 'text/css';
   navClasses.innerHTML = 
-  '.nav-scroll-up{transform: translateY(-' + 80 + 'px)!important;}' +
-  '.nav-scroll-down{transform: translateY(' + 80 + 'px)!important;}' +
+  '.nav-scroll-up{-webkit-transform: translateY(-'+78+'px)!important;-ms-transform: translateY(-'+78+'px)!important;transform: translateY(-'+78+'px)!important;}' +
+  '.nav-scroll-down{-webkit-transform: translateY('+78+'px)!important;-ms-transform: translateY('+78+'px)!important;transform: translateY('+78+'px)!important;}' +
   '.nav-scroll-fixed-'+ nav_position +'{position: fixed;'+ nav_position +': 0;right: 0;left: 0;z-index: 1000;}' +
-  '.nav-scroll-transition{will-change: transform; transition: transform 0.5s cubic-bezier(0.5, 0, 0.25, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.25, 1)!important;}';
+  '.nav-scroll-transition{will-change: transform; -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);-o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);transition: transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);transition: transform 0.5s cubic-bezier(0.5, 0, 0.25, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.25, 1)!important;}';
   document.getElementsByTagName('head')[0].appendChild(navClasses);
   navbar.classList.add('nav-scroll-transition');
   navbar.classList.add('nav-scroll-fixed-' + nav_position);
@@ -38,7 +38,6 @@ function hide_on_scroll(obj) {
   var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   // Get Current Viewport Width
   window.onresize = function(){ width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0); }
-
   // Call Window OnScroll
   window.onscroll = function() {
     // disable Hide on scroll for mobile

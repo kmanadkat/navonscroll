@@ -42,6 +42,7 @@
             <a class="list-group-item py-3 list-group-item-action" href="#installation" >Installation</a>
             <a class="list-group-item py-3 list-group-item-action" href="#usage" >Usage</a>
             <a class="list-group-item py-3 list-group-item-action" href="#configuration" >Configuration</a>
+            <a class="list-group-item py-3 list-group-item-action" href="#examples" >Examples</a>
             <a class="list-group-item py-3 list-group-item-action" href="#license" >License</a>
           </div>
         </div>
@@ -71,7 +72,7 @@
               <a class="ml-2 linking" href="#installation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
             </h2>
             <hr>
-            <p><a href="#" class="link font-weight-bold">Download Zip</a> from github, extract it and look for <span class="text-highlight">NavOnScroll.min.js</span> inside "dist" Folder. Copy it to your project folder. If you prefer to put plugins like <span class="px-2 py-1 text-center markdown">root/assets/js/plugin.js</span> and index.html lies in root, then below is the example of script include. Placing it just above &lt;/body&gt; tag would work well.</p>
+            <p><a target="_blank" href="https://github.com/kmanadkat/NavOnScroll.js/archive/master.zip" class="link font-weight-bold">Download Zip</a> from github, extract it and look for <span class="text-highlight">NavOnScroll.min.js</span> inside "dist" Folder. Copy it to your project folder. If you prefer to put plugins like <span class="px-2 py-1 text-center markdown">root/assets/js/plugin.js</span> and index.html lies in root, then below is the example of script include. Placing it just above &lt;/body&gt; tag would work well.</p>
               <div class="code-container">
                   <button onclick="CopyToClipboard('code-1')" class="btn-copy">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
@@ -160,9 +161,32 @@
             </h2>
             <hr>
             <p>Done with <a class="link" href="#installation">Installation</a> &amp; <a class="link" href="#usage">Usage</a> ? Let us jump in real easy and powerful configurations (function parameters) to have more control over onscroll behaviour of navbar.</p>
-            <p>I am listing all Parameters of <span class="px-2 py-1 markdown">hide_on_scroll()</span> function below :</p>
+            <p>I am listing all Parameters of <span class="px-2 py-1 markdown">hide_on_scroll()</span> with default values below :</p>
+            <div class="code-container mt-3">
+                <button onclick="CopyToClipboard('code-5')" class="btn-copy">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+                <pre class="language-javascript scrollbar scroll-style" id="code-5">
+<code>// hide_on_scroll function with DEFAULT parameter VALUES
+hide_on_scroll({
+  nav_id               : '',      // you must specify this for plugin to work
+  nav_offset           : 200,     // after how much y-scroll, nav should hide onscroll down
+  nav_position         : 'top',   // you want to see nav bar at 'top' or 'bottom', default 'top'
+  hide_onscroll_mobile : false,   // disables hide-onscroll for mobile, you can set it to true
+  mobile_width         : 576      // viewport width below which it disables hide-onscroll if above is false
+});</code></pre>
             </div>
+            <p>To get more clear idea on how to use this parameters, checkout <a class="link" href="#demos">Demos</a>. In total i have prepared <span class="text-highlight">9 Demos</span> for you. It includes examples of Bootstrap, Semantic-UI and Custom Navbar. I have applied <span class="px-2 py-1 markdown">customizations for mobile</span> in various demos. I highly recommend you to checkout those.</p>
+          </div>
 
+
+          <!--========================================== Demo ==========================================-->
+          <div id="examples" class="doc-section">
+            <h2>Examples
+              <a class="ml-2 linking" href="#usgae"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
+            </h2>
+            <hr>
+          </div>
             <!--========================================== License ==========================================-->
 
         </div>

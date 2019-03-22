@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nav On Scroll</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/prism.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+</head>
+<body data-spy="scroll" data-target="#scrollList" data-offset="10">
+  <header>
+    <nav class="navbar navbar-expand-lg flex-column flex-sm-row navbar-dark bg-darker fixed-top shadow-sm hideOnScroll-nav">
+      <a class="navbar-brand ml-md-5 font-weight-bold" href="#">🖱️ Nav On Scroll</a>
+      <div class="navbar-nav-scroll ml-md-auto">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item mx-4 mx-sm-4 mx-md-5 active"><a class="nav-link" href="#">Docs</a></li>
+          <li class="nav-item mx-4 mx-sm-4 mx-md-5"><a class="nav-link" title="Github Docs" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a></li>
+          <li class="nav-item mx-4 mx-sm-4 mx-md-5"><a class="nav-link" href="#">Demos</a></li>        
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="docs-main mt-5">
+    <div class="container py-5" id="introduction">
+      <div class="row mt-5 justify-content-around px-2 px-sm-0">
+        <div class="col-sm-6 col-md-3 mt-5">
+          <div class="list-group list-group-flush sticky-top d-none d-sm-block shadow mt-4" id="scrollList">
+            <a class="list-group-item py-3 list-group-item-action" href="#introduction" >Introduction</a>
+            <a class="list-group-item py-3 list-group-item-action" href="#installation" >Installation</a>
+            <a class="list-group-item py-3 list-group-item-action" href="#usage" >Usage</a>
+            <a class="list-group-item py-3 list-group-item-action" href="#configuration" >Configuration</a>
+            <a class="list-group-item py-3 list-group-item-action" href="#license" >License</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-7 scrollspy-example" id="docs-writeup">
+        <!--========================================== Introduction ==========================================-->
+          <div style=" margin-top: 4rem;">
+            <h2>Introduction
+              <a class="ml-2 linking" href="#introduction"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
+            </h2>
+            <hr>
+            <p><span class="font-weight-bold">NavOnScroll.js</span> &mdash; Bring Life to Navigation. Add scrolling animations to it with this <span class="text-highlight">Vanilla Js Lite Plugin</span>. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; <i class="text-italic">NavOnScroll.js is Easy To Integrate</i> and make your navigation bar Animate On Scroll events.</p>
+            <div class="p-2 alert alert-success mt-4">
+              <span class="float-right mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line><line x1="7" y1="3.5" x2="17" y2="8.5"></line></svg></span>
+              <ul class="feature-list mt-2">
+                <li>No Dependencies!</li>
+                <li>Vanilla JS Lite Plugin</li>
+                <li>Easy to Integrate with any framework</li>
+                <li>Supports Top &amp; Bottom Navigation Bar</li>
+                <li>Easy Configuration &amp; Flexebility</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--========================================== Installation ==========================================-->
+          <div id="installation" class="doc-section">
+            <h2>Installation
+              <a class="ml-2 linking" href="#installation"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
+            </h2>
+            <hr>
+            <p><a href="#" class="link font-weight-bold">Download Zip</a> from github, extract it and look for <span class="text-highlight">NavOnScroll.min.js</span> inside "dist" Folder. Copy it to your project folder. If you prefer to put plugins like <span class="px-2 py-1 text-center markdown">root/assets/js/plugin.js</span> and index.html lies in root, then below is the example of script include. Placing it just above &lt;/body&gt; tag would work well.</p>
+              <div class="code-container">
+                  <button onclick="CopyToClipboard('code-1')" class="btn-copy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                  <pre class="language-markup scrollbar scroll-style" id="code-1">
+<code>&lt;script src=&quot;assets/js/NavOnScroll.js&quot;&gt;&lt;/script&gt;</code>
+</pre></div>
+
+            <p>As soon as I am done with all publishing work, my first priority would be to get cdn link. But above mentioned approach should work just fine.</p>
+          </div>
+
+
+          <!--========================================== Usage ==========================================-->
+          <div id="usage" class="doc-section">
+            <h2>Usage
+              <a class="ml-2 linking" href="#usgae"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>
+            </h2>
+            <hr>
+            <p>Designed to be easy to use, it does most of the heavy lifting behind the scenes and exposes a simple api to interact with the dom.</p>
+            <ul class="list-unstyled">
+              <li class="lea">
+                  <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#009900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="251"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                Get your Navbar Markup ready with "id" attribute</li>
+                <div class="code-container mt-3">
+                    <button onclick="CopyToClipboard('code-1')" class="btn-copy">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    </button>
+                    <pre class="language-markup scrollbar scroll-style" id="code-1">
+  <code>&lt;script src=&quot;assets/js/NavOnScroll.js&quot;&gt;&lt;/script&gt;</code>
+  </pre></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/navOnScroll.js"></script>
+  <script src="assets/js/clipCopy.js"></script>
+  <script src="assets/js/prism.js"></script>
+  <script>
+    hideOnScroll({
+      YOffset: 70,
+      MobileAlwaysShow: false
+    });
+  </script>
+</body>
+</html>

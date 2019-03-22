@@ -17,9 +17,9 @@
   <link rel="manifest" href="site.webmanifest">
   
 </head>
-<body data-spy="scroll" data-target="#scrollList" data-offset="10">
+<body data-spy="scroll" data-target="#scrollList" data-offset="0">
   <header>
-    <nav class="navbar navbar-expand-lg flex-column flex-sm-row navbar-dark bg-darker fixed-top shadow-sm hideOnScroll-nav">
+    <nav class="navbar navbar-expand-lg flex-column flex-sm-row navbar-dark bg-darker fixed-top shadow-sm" id="navonScroll">
       <a class="navbar-brand ml-md-5 font-weight-bold" href="#">🖱️ Nav On Scroll</a>
       <div class="navbar-nav-scroll ml-md-auto">
         <ul class="navbar-nav flex-row">
@@ -112,13 +112,14 @@
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="assets/js/navOnScroll.js"></script>
+  <script src="assets/js/NavOnScroll.js"></script>
   <script src="assets/js/clipCopy.js"></script>
   <script src="assets/js/prism.js"></script>
   <script>
-    hideOnScroll({
-      YOffset: 70,
-      MobileAlwaysShow: false
+    hide_on_scroll({
+      nav_id: 'navonScroll',
+      hide_onscroll_mobile : true,
+      nav_offset : 1
     });
   </script>
 </body>

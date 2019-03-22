@@ -98,7 +98,7 @@ nav.navbar{
 	max-width: 850px;
 }
 .btn-copy{
-  background-color: transparent;
+    background-color: #444;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -107,6 +107,8 @@ nav.navbar{
     font-size: 12px;
     transition: all 0.3s linear;
     color: rgb(168, 168, 168);
+    z-index: 100;
+    border-radius: 5px;
 }
 .btn-copy:hover{
   color: #fff;

@@ -32,7 +32,8 @@ nav.navbar{
 }
 
 .doc-section{
-  margin-top: 6rem;
+  padding-top: 9rem;
+  margin-top: -5rem;  
 }
 #docs-writeup h2{
   margin-bottom: 1.5rem;

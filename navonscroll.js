@@ -13,7 +13,6 @@ function hide_on_scroll(obj) {
   var mobile_width            = !!obj.mobile_width ? obj.mobile_width : 576;
   nav_position = nav_position.toLowerCase();
 
-  console.log(hide_onscroll_mobile);
   // Prepare Navbar
   var navbar = document.getElementById(nav_id);
   if(navbar==undefined){throw new TypeError("Recheck Passed Navigation Id"); }
@@ -37,7 +36,7 @@ function hide_on_scroll(obj) {
   var scrollingClass = (nav_position==='top') ? 'nav-scroll-up' : 'nav-scroll-down';
   var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   // Get Current Viewport Width
-  window.onresize = function(){ width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0); }
+  window.onresize = function(){ width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);}
   // Call Window OnScroll
   window.onscroll = function() {
     // disable Hide on scroll for mobile

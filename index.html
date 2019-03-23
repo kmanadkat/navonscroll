@@ -9,26 +9,22 @@
   <meta name="author" content="Krupesh M. Anadkat">
   <title>Nav On Scroll - Add Animation to Navbar</title>
   <!-- Search Engine -->
-  <meta name="description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events.
-  <ul><li>No Dependencies!</li><li>Vanilla JS Lite Plugin</li><li>Easy to Integrate with any framework</li><li>Supports Top and Bottom Navigation Bar</li><li>Easy Configuration & Flexebility</li></ul>">
+  <meta name="description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events. No Dependencies!, Vanilla JS Lite Plugin, Easy to Integrate with any framework, Supports Top and Bottom Navigation Bar, Easy Configuration & Flexebility">
   <meta name="image" content="https://kmanadkat.github.io/navonscroll/android-chrome-512x512.png">
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="Nav On Scroll - Add Animation to Navbar">
-  <meta itemprop="description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events.
-  <ul><li>No Dependencies!</li><li>Vanilla JS Lite Plugin</li><li>Easy to Integrate with any framework</li><li>Supports Top and Bottom Navigation Bar</li><li>Easy Configuration & Flexebility</li></ul>">
+  <meta itemprop="description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events. No Dependencies!, Vanilla JS Lite Plugin, Easy to Integrate with any framework, Supports Top and Bottom Navigation Bar, Easy Configuration & Flexebility">
   <meta itemprop="image" content="https://kmanadkat.github.io/navonscroll/android-chrome-512x512.png">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Nav On Scroll - Add Animation to Navbar">
-  <meta name="twitter:description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events.
-  <ul><li>No Dependencies!</li><li>Vanilla JS Lite Plugin</li><li>Easy to Integrate with any framework</li><li>Supports Top and Bottom Navigation Bar</li><li>Easy Configuration & Flexebility</li></ul>">
+  <meta name="twitter:description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events. No Dependencies!, Vanilla JS Lite Plugin, Easy to Integrate with any framework, Supports Top and Bottom Navigation Bar, Easy Configuration & Flexebility">
   <meta name="twitter:creator" content="@KrupeshAnadkat">
   <meta name="twitter:image:src" content="https://kmanadkat.github.io/navonscroll/android-chrome-512x512.png">
   <!-- Twitter - Product (e-commerce) -->
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta name="og:title" content="Nav On Scroll - Add Animation to Navbar">
-  <meta name="og:description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events.
-  <ul><li>No Dependencies!</li><li>Vanilla JS Lite Plugin</li><li>Easy to Integrate with any framework</li><li>Supports Top and Bottom Navigation Bar</li><li>Easy Configuration & Flexebility</li></ul>">
+  <meta name="og:description" content="Bring Life to Navigation with navonscroll.js . Add scrolling animations to it with this Vanilla Js Lite Plugin. Be it Bootstrap, Semantic-UI, Materialize, or just any Custom Navigation Bar; NavOnScroll.js is Easy To Integrate and make your navigation bar Animate On Scroll events. No Dependencies!, Vanilla JS Lite Plugin, Easy to Integrate with any framework, Supports Top and Bottom Navigation Bar, Easy Configuration & Flexebility">
   <meta name="og:image" content="https://kmanadkat.github.io/navonscroll/android-chrome-512x512.png">
   <meta name="og:url" content="https://kmanadkat.github.io/navonscroll/">
   <meta name="og:site_name" content="Nav On Scroll - Add Animation to Navbar">
@@ -49,7 +45,7 @@
 </head>
 <body data-spy="scroll" data-target="#scrollList" data-offset="-10">
   <header>
-    <nav class="navbar navbar-expand-lg flex-column flex-sm-row navbar-dark bg-darker fixed-top shadow-sm" id="navonScroll">
+    <nav class="navbar navbar-expand-lg flex-column flex-sm-row navbar-dark bg-darker fixed-top shadow-sm fixed-top" id="myscrolling_nav">
       <a class="navbar-brand ml-md-5 font-weight-bold" href="#">🖱️ Nav On Scroll</a>
       <div class="navbar-nav-scroll ml-md-auto">
         <ul class="navbar-nav flex-row">
@@ -286,18 +282,19 @@ SOFTWARE.</code></pre>
   <footer class="bg-darker py-2">
     <p class="pt-3 text-center text-white"><span class="text-warning font-weight-bold">Nav On Scroll</span> Vanilla Js Plugin developed by <span class="text-info font-weight-bold">Krupesh M. Anadkat</span> 2019 </p>
   </footer>
+
+  <script src="navonscroll.js"></script>
+  <script>
+    hide_on_scroll({
+      nav_id: 'myscrolling_nav',
+      hide_onscroll_mobile : true,
+      nav_offset : 10
+    });
+  </script>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="assets/js/clipCopy.js"></script>
   <script src="assets/js/prism.js"></script>
-  <script src="navonscroll.js"></script>
-  <script>
-    hide_on_scroll({
-      nav_id: 'navonScroll',
-      hide_onscroll_mobile : true,
-      nav_offset : 1
-    });
-  </script>
 </body>
 </html>

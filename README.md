@@ -75,7 +75,7 @@ hide_on_scroll({
 ```
 As you can see i have written down comments for each parameter passed. Just have a glance on it & you are good to go 🏃🏻
 
-If you are having are having hard time with undertsnading those parameters, not to worry. I have made around [9 Demo Examples](https://kmanadkat.github.io/navonscroll/#examples) for you with Frameworks ```Bootstrap v4.3``` & ```Semantic UI``` also took care for developers who create from scratch with custom navigation div.
+If you are having hard time with understanding those parameters, not to worry. I have made around [9 Demo Examples](https://kmanadkat.github.io/navonscroll/#examples) for you with Frameworks ```Bootstrap v4.3``` & ```Semantic UI``` also took care for developers who create from scratch with custom navigation div.
 
 > We are always talking of **Horizontal Navigation Menu** and not the vertical lists menu or sidebars.
 
